@@ -5,175 +5,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pallavi Reddy - Portfolio</title>
-    <meta name="description" content="Portfolio of Pallavi Reddy - AI & Data Science Student">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;400;600;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Background Elements -->
-    <div class="bg-elements">
-        <div class="glow-orb orb-1"></div>
-        <div class="glow-orb orb-2"></div>
-    </div>
+    <div id="particles-js"></div>
 
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">Pallavi.</a>
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                <i class="bi bi-list"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <nav class="navbar">
+        <div class="logo">Pallavi<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
     </nav>
 
-    <!-- Hero Section (Home) -->
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <div class="hero-text fade-in-up">
-                <span class="greeting">Welcome to my universe</span>
-                <h1 class="heading">Hi, I'm <span class="gradient-text">Pallavi Reddy</span></h1>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-left reveal">
+                <p class="welcome-text">WELCOME TO MY UNIVERSE</p>
+                <h1 class="main-heading">Hi, I'm <span class="typing-text"></span><span class="cursor">&nbsp;</span>
+                </h1>
                 <h2 class="subheading">AI & Data Science Student | Problem Solver | Technology Enthusiast</h2>
                 <p class="description">
                     I am a B.Tech student specializing in Artificial Intelligence and Data Science. I enjoy building
                     innovative solutions using AI, Data Analytics, and Software Development.
                 </p>
-                <div class="hero-buttons">
+                <div class="btn-group">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#resume" class="btn btn-outline">Resume Preview</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="#" class="btn btn-secondary">Resume Preview</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
 
-            <div class="hero-image-container fade-in-left">
-                <div class="glass-card visual-card">
-                    <div class="code-snippet">
-                        <span class="keyword">const</span> <span class="variable">developer</span> = {
-                        <br>&nbsp;&nbsp;name: <span class="string">"Pallavi Reddy"</span>,
-                        <br>&nbsp;&nbsp;focus: [<span class="string">"AI"</span>, <span class="string">"Data
-                            Science"</span>],
-                        <br>&nbsp;&nbsp;passion: <span class="string">"Innovation"</span>,
-                        <br>&nbsp;&nbsp;isProblemSolver: <span class="keyword">true</span>
-                        <br>};
+            <div class="hero-right reveal">
+                <div class="code-card">
+                    <div class="mac-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code><span class="keyword">const</span> <span class="variable">developer</span> <span class="operator">=</span> {
+  <span class="property">name</span>: <span class="string">"Pallavi Reddy"</span>,
+  <span class="property">focus</span>: [<span class="string">"AI"</span>, <span class="string">"Data Science"</span>],
+  <span class="property">passion</span>: <span class="string">"Innovation"</span>,
+  <span class="property">isProblemSolver</span>: <span class="boolean">true</span>
+};</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content glass-card">
+                <p>Hello! I'm Pallavi Reddy, a passionate Artificial Intelligence and Data Science student. I thrive on
+                    solving complex problems and turning ideas into impactful digital solutions.</p>
+                <p>My journey in tech is driven by an insatiable curiosity for how data and algorithms can shape the
+                    future. I love working on challenging projects and am always eager to learn new technologies to
+                    improve my craft.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section reveal">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="skill-card"><i class="fas fa-brain"></i><span>Machine Learning</span></div>
+                <div class="skill-card"><i class="fas fa-chart-bar"></i><span>Data Science</span></div>
+                <div class="skill-card"><i class="fas fa-database"></i><span>SQL</span></div>
+                <div class="skill-card"><i class="fab fa-html5"></i><span>HTML</span></div>
+                <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                <div class="skill-card"><i class="fab fa-github"></i><span>GitHub</span></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section reveal">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <h3>Wi-Fi Controlled Surveillance Robot</h3>
+                        <p>A smart robot capable of remote surveillance through a Wi-Fi network, providing real-time
+                            video feed and control.</p>
+                        <div class="tags">
+                            <span>Hardware</span><span>IoT</span>
+                        </div>
+                        <a href="#" class="btn btn-outline sm">Demo</a>
+                        <a href="#" class="btn btn-outline sm">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <h3>Digital Labour Hiring System</h3>
+                        <p>A comprehensive platform bridging the gap between daily wage laborers and employers,
+                            simplifying the hiring process.</p>
+                        <div class="tags">
+                            <span>Web App</span><span>Database</span>
+                        </div>
+                        <a href="#" class="btn btn-outline sm">Demo</a>
+                        <a href="#" class="btn btn-outline sm">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <h3>AI Student Performance Prediction</h3>
+                        <p>A machine learning model designed to analyze student data and predict academic outcomes to
+                            help educators intervene early.</p>
+                        <div class="tags">
+                            <span>Machine Learning</span><span>Python</span>
+                        </div>
+                        <a href="#" class="btn btn-outline sm">Demo</a>
+                        <a href="#" class="btn btn-outline sm">GitHub</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container fade-in-up">
-            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-            <div class="glass-card mt-2">
-                <p>I am a B.Tech student specializing in Artificial Intelligence and Data Science. I have a strong
-                    foundation in modern web technologies and machine learning frameworks. From analyzing data trends to
-                    developing intelligent applications, I strive to create meaningful digital experiences.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container fade-in-up">
-            <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
-            <div class="skills-grid mt-2">
-                <div class="skill-pill">Artificial Intelligence</div>
-                <div class="skill-pill">Data Science</div>
-                <div class="skill-pill">Machine Learning</div>
-                <div class="skill-pill">Python</div>
-                <div class="skill-pill">Data Analytics</div>
-                <div class="skill-pill">Software Development</div>
-                <div class="skill-pill">HTML/CSS/JS</div>
-                <div class="skill-pill">SQL</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container fade-in-up">
-            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-            <div class="projects-grid mt-2">
-                <div class="glass-card project-card">
-                    <h3>AI Assistant</h3>
-                    <p>A smart personal assistant utilizing NLP to automate daily tasks and schedule management.</p>
-                </div>
-                <div class="glass-card project-card">
-                    <h3>Data Visualization Dashboard</h3>
-                    <p>An interactive dashboard built to analyze real-time streaming data and uncover business insights.
-                    </p>
-                </div>
-                <div class="glass-card project-card">
-                    <h3>Machine Learning Predictor</h3>
-                    <p>A predictive model that forecasts trends based on historical financial datasets.</p>
+        <!-- Resume Section -->
+        <section id="resume" class="section reveal">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content glass-card center">
+                <p>Want to know more about my experience and qualifications? Feel free to view or download my resume.
+                </p>
+                <div class="resume-btns">
+                    <a href="#" class="btn btn-primary"><i class="fas fa-file-alt"></i> View Resume</a>
+                    <a href="#" class="btn btn-outline"><i class="fas fa-download"></i> Download PDF</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="section">
-        <div class="container fade-in-up text-center">
-            <h2 class="section-title"><span class="gradient-text">Resume</span> Preview</h2>
-            <div class="glass-card mt-2 d-inline-block text-left"
-                style="max-width: 600px; margin: 0 auto; text-align: left;">
-                <h3 style="margin-bottom: 1rem;">Education</h3>
-                <p><strong>B.Tech in Artificial Intelligence & Data Science</strong></p>
-                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">University Name, Expected 2027</p>
-
-                <h3 style="margin-bottom: 1rem;">Experience</h3>
-                <p><strong>Software Engineering Intern</strong></p>
-                <p style="color: var(--text-secondary);">Tech Corp, Summer 2025</p>
-
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="#" class="btn btn-primary mt-1">Download Full Resume (PDF)</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container fade-in-up">
-            <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
-            <div class="glass-card mt-2 contact-card">
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required class="input-field">
-                    <input type="email" placeholder="Your Email" required class="input-field">
-                    <textarea placeholder="Your Message" rows="5" required class="input-field"></textarea>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        <!-- Contact Section -->
+        <section id="contact" class="section reveal">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container glass-card">
+                <form class="contact-form" onsubmit="event.preventDefault();">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
                 </form>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> pallavi.reddy@example.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> City, Country</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Pallavi Reddy. All rights reserved.</p>
-            <div class="socials">
-                <a href="#"><i class="bi bi-github"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-envelope"></i></a>
-            </div>
-        </div>
+        <p>&copy; 2026 Pallavi Reddy. All rights reserved.</p>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
